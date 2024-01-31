@@ -42,47 +42,47 @@
 # Configure VLANs
 - Creating VLANs
   ```
-  Switch (config)# vlan 2
-  Switch (config-vlan)# name Team1
-  Switch (config-vlan)# vlan 3
-  Switch (config-vlan)# name Team2
-  Switch (config-vlan)# vlan 4
-  Switch (config-vlan)# name team3
+  Switch(config)# vlan 2
+  Switch(config-vlan)# name Team1
+  Switch(config-vlan)# vlan 3
+  Switch(config-vlan)# name Team2
+  Switch(config-vlan)# vlan 4
+  Switch(config-vlan)# name team3
   ```
 - Setting Access Ports & Assigning VLANs
   ```
-  Switch (config)# interface fa0/2
-  Switch (config-if)# switchport mode access
-  Switch (config-if)# switchport access vlan 2
-  Switch (config-if)# interface fa0/3
-  Switch (config-if)# switchport mode access
-  Switch (config-if)# switchport access vlan 2
-  Switch (config-if)# interface fa0/4
-  Switch (config-if)# switchport mode access
-  Switch (config-if)# switchport access vlan 3
-  Switch (config-if)# interface fa0/5
-  Switch (config-if)# switchport mode access
-  Switch (config-if)# switchport access vlan 3
-  Switch (config-if)# interface fa0/6
-  Switch (config-if)# switchport mode access
-  Switch (config-if)# switchport access vlan 4
-  Switch (config-if)# interface fa0/7
-  Switch (config-if)# switchport mode access
-  Switch (config-if)# switchport access vlan 4
+  Switch(config)# interface fa0/2
+  Switch(config-if)# switchport mode access
+  Switch(config-if)# switchport access vlan 2
+  Switch(config-if)# interface fa0/3
+  Switch(config-if)# switchport mode access
+  Switch(config-if)# switchport access vlan 2
+  Switch(config-if)# interface fa0/4
+  Switch(config-if)# switchport mode access
+  Switch(config-if)# switchport access vlan 3
+  Switch(config-if)# interface fa0/5
+  Switch(config-if)# switchport mode access
+  Switch(config-if)# switchport access vlan 3
+  Switch(config-if)# interface fa0/6
+  Switch(config-if)# switchport mode access
+  Switch(config-if)# switchport access vlan 4
+  Switch(config-if)# interface fa0/7
+  Switch(config-if)# switchport mode access
+  Switch(config-if)# switchport access vlan 4
   ```
 - Setting Trunk Interface
   ```
-  Switch (config)# interface fa0/1
-  Switch (config-if)# switchport mode trunk
-  Switch (config-if)# switchport nonegotiate
-  Switch (config-if)# switchport trunk encapsulation dot1.q
-  Switch (config-if)# switchport trunk encapsulation nonegotiate
+  Switch(config)# interface fa0/1
+  Switch(config-if)# switchport mode trunk
+  Switch(config-if)# switchport nonegotiate
+  Switch(config-if)# switchport trunk encapsulation dot1.q
+  Switch(config-if)# switchport trunk encapsulation nonegotiate
   ```
 - Setting Native VLAN and Allowed VLANs
   ```
-  Switch (config-if)# switchport trunk native vlan5
-  Switch (config-if)# switchport trunk allowed valn all
-  Switch (config-if)# switchport trunk allowed vlan 2,3,4,5
+  Switch(config-if)# switchport trunk native vlan5
+  Switch(config-if)# switchport trunk allowed valn all
+  Switch(config-if)# switchport trunk allowed vlan 2,3,4,5
   ```
   
   
