@@ -79,10 +79,10 @@
   Switch (config-if)# switchport trunk encapsulation nonegotiate
   ```
 - Setting Native VLAN and Allowed VLANs
-```
-Switch (config-if)# switchport trunk native vlan5
-Switch (config-if)# switchport trunk allowed valn all
-Switch (config-if)# switchport trunk allowed vlan 2,3,4,5
-```
+  ```
+  Switch (config-if)# switchport trunk native vlan5
+  Switch (config-if)# switchport trunk allowed valn all
+  Switch (config-if)# switchport trunk allowed vlan 2,3,4,5
+  ```
   
   
